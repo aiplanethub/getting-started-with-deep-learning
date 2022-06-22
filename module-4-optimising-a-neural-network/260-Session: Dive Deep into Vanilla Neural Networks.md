@@ -1,0 +1,2 @@
+<h1>Session: Dive Deep into Vanilla Neural Networks</h1>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/oj41Qm0DKN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
