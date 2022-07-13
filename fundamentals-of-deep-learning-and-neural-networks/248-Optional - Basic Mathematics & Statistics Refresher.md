@@ -233,36 +233,48 @@ Note: we will get used to these terms soon, no need to worry too much about it. 
 ### Measures of Central Tendencies
 * **Mean**: The mean is the average of a data set. For example, take a list of numbers: $[10, 20, 40, 10, 70]$. Mean = $(10 + 20 + 40 + 10 + 70) / 5 = 30$
 * **Median**: The median is the middle of the set of numbers. To find the median, first, we sort the list of numbers: $[10, 10, 20, 40, 70]$. The exact middle number, i.e., 20, is the median.
-* **Mode**: The mode is the most common number in a data set. In above list of numbers, 10 has occurred 2 times while other three numbers occurred one time each. So, the mode is 10 here.
+* **Mode**: The mode is the most common number in a data set. In the above list of numbers, 10 has occurred 2 times while the other three numbers occurred one time each. So, the mode is 10 here.
 
 ### Applications of Central Tendencies
 
-* **MEAN**: When you watch a baseball game and you see the player's batting average, that number represents the total number of hits divided by the number of times at bat. In other words, that number is the mean. In school, the final grade you get in a course is usually a mean. This mean represents the total number of points you scored in the class divided by the number of possible points. This is the classic type of average – when your overall performance on many items is evaluated with a single number.
-* MEDIAN: Although the mean is the most common type of average, the median can also be used to express the average of a group. You may hear about the median salary for a country or city. When the average income for a country is discussed, the median is most often used because it represents the middle of a group. Mean allows very high or very low numbers to sway the outcome but median is an excellent measure of the center of a group of data.
-Applications of Central Tendencies
-MODE: Imagine that you live in a small town where most of the people are employed by a factory and earn minimum wage. One of the factory owners lives in the town and his salary is in the millions of dollars. If you use a measure like the average to try to compare salaries in the town as a whole, the owner's income would severely throw off the numbers. This is where the measure of mode can be useful in the real world. It tells you what most of the pieces of data are doing within a set of information.
-Measures of Dispersion
-Range: It is the difference between highest value and the lowest value in the data set.
-For a given list of numbers: 10, 20, 40, 10, 70 the range is 70 - 10 = 60.
-Variance: The average of the squared differences from the mean. Steps to calculate variance:
-Calculate mean (mean is nothing but average)
-Find difference of each data from mean
-Square all the differences
-Take the average of the squares.
-Standard Deviation: It shows you how much your data is spread out around the mean. Its symbol is ???? (the greek letter sigma). It is the square root of the variance.
-Standard Deviation
+* **MEAN**: When you watch a baseball game and you see the player's batting average, that number represents the total number of hits divided by the number of times at-bat. In other words, that number is the mean. In school, the final grade you get in a course is usually a mean. This mean represents the total number of points you scored in the class divided by the number of possible points. This is the classic type of average – when your overall performance on many items is evaluated with a single number.
+* **MEDIAN**: Although the mean is the most common type of average, the median can also be used to express the average of a group. You may hear about the median salary for a country or city. When the average income for a country is discussed, the median is most often used because it represents the middle of a group. Mean allows very high or very low numbers to sway the outcome but the median is an excellent measure of the center of a group of data.
+* **MODE**: Imagine that you live in a small town where most of the people are employed by a factory and earn minimum wage. One of the factory owners lives in the town and his salary is in the millions of dollars. If you use a measure like the average to try to compare salaries in the town as a whole, the owner's income would severely throw off the numbers. This is where the measure of mode can be useful in the real world. It tells you what most of the pieces of data are doing within a set of information.
 
-Calculating Variance
-Steps to calculate variance:
-Calculate mean
-Find difference of each data from mean
-Square all the differences
-Take the average of the squares.
-Consider the list of numbers: 10, 20, 40, 10, 70.
-Mean of the number is 30.
-Difference of each data from the mean: -20, -10, 10, -20, 40.
-Square of all the differences: 400, 100, 100, 400, 1600
-Take the average of the squares:
-(400 + 100 + 100 + 400 + 1600) / 5 = 2600 / 5 = 520
-That’s it for for this module. Thank you!
-Feel free to post any queries in the #help channel on Slack or on the discuss forum
+### Measures of Dispersion
+* **Range**: It is the difference between the highest value and lowest values in the data set. For a given list of numbers: $[10, 20, 40, 10, 70]$, the range is $70 - 10 = 60$.
+* **Variance**: The average of the squared differences from the mean.  
+  Steps to calculate variance:
+  * Calculate the mean
+  * Find the difference between each observation and the mean
+  * Square all the differences
+  * Take the average of the squares.
+* **Standard Deviation**: It shows you how much your data is spread out around the mean. Its symbol is $\sigma$ (the Greek letter sigma). It is the square root of the variance.
+
+
+
+
+
+
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/heN3uvJ99Vo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+Consider the list of numbers: $[10, 20, 40, 10, 70]$.
+* The mean of the numbers is $30$.
+* Difference of each data from the mean: $-20, -10, 10, -20, 40$.
+* Square of all the differences: $400, 100, 100, 400, 1600$
+* Take the average of the squares:  
+$\frac{400 + 100 + 100 + 400 + 1600}{5} = \frac{2600}{5} = 520$
