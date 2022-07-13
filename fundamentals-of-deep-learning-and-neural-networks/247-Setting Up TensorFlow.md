@@ -81,6 +81,26 @@ So, you don't need to worry about installing a bulky Python application on your 
 Once the installation is done, run the below command to import tensorflow:  
 `import tensorflow as tf`
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Option 2: Installing on Your Device
 To install Tensorflow on your device, open your Jupyter notebook and type the following command:  
  `!pip install tensorflow`  
