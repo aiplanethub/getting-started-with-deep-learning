@@ -1,0 +1,3 @@
+<p>Basic Notebook on Tensor Operations:&nbsp;<a href="https://dphi.tech/notebooks/839/gunnika/tensor-operations-basics?" target="_blank">https://dphi.tech/notebooks/839/gunnika/tensor-operations-basics?</a></p>
+
+<p>Advance Notebook on Tensor Operations:&nbsp;<a href="https://dphi.tech/notebooks/842/gunnika/tensor-operations-advance?" target="_blank">https://dphi.tech/notebooks/842/gunnika/tensor-operations-advance?</a></p>
