@@ -33,7 +33,7 @@ Not very inspiring, right? Two questions immediately arise: where did all this c
 
 * It depends on your goal.
 * If you just want to use AI and machine learning tools as a black box, you arguably just need enough math to figure out if your problem fits the model's premise.
-* But, if you want to develop new ideas, Linear Algebra is your must-learn. I don't mean you need to learn everything concerning math. Doing so, you will be stuck at everything and lose motivation towards other more important things like calculus/stats.
+* But, if you want to develop new ideas, Linear Algebra is a must-learn. I don't mean you need to learn everything concerning math. Doing so, you will be stuck at everything and lose motivation towards other more important things like calculus/stats.
 * Mathematics in data science and machine learning is not about crunching numbers but about what is happening, why it's happening, and how we can play around with different things to obtain the desired results.
 
 ### Linear Algebra
