@@ -110,7 +110,19 @@ A simple video explanation of tensorflow installation can be found on the next s
 
 
 
+
+
+
+
+
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VC-EliTgMEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+
 
 
 
