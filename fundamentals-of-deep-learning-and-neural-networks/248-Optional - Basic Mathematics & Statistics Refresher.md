@@ -112,7 +112,7 @@ PS: Matrix operations like Addition, Multiplication, and Transposing are commonl
 ### Vectors
 
 * Vector is nothing but a one-dimensional matrix.
-* For example, [1 2 3 4 5] is a vector. This is known as a row vector. Or,  
+* For example, $\begin{bmatrix} 1&2&3&4&5\end{bmatrix}$ is a vector. This is known as a row vector. Or,  
 ${\begin{bmatrix} 1 \\ 2 \\ 3 \\ 4 \\ 5 \end{bmatrix}}$  
 is a column vector.
 
