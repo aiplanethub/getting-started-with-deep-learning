@@ -109,10 +109,8 @@ Upgrade using conda: `conda upgrade tensorflow-gpu`
 
 ## Additional Resources on Installation!
 
-Install Tensorflow GPU on Windows 10 with CUDA and cuDNN
-<Intermediate/advanced Learners can explore this option. For rest, we can gradually get there whenever required, for the moment, you can simply go with Google Colab or the device installation mentioned couple of slides earlier>
-Download Slides Link
-https://docs.google.com/presentation/d/1IsKOBo4- ptafuwFXwQQNAbpMVbPPsZyKVEm3QZj0_Ho/edit
-?usp=sharing
-That's it for this unit. Thank you!
-Feel free to post any queries in the #help channel on Slack or on the Discuss forum
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xQVOaTUm9lM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Intermediate/advanced Learners can explore this option. For the rest, we can gradually get there whenever required. For the moment, you can simply go with Google Colab or the device installation mentioned a couple of slides earlier.
+
+You can download the [slides for this unit here](https://docs.google.com/presentation/d/1IvlcSDuUjkEH4XLiqtfSA0rNyhbI5vh-UB84JwqA8BQ/edit?usp=sharing).
