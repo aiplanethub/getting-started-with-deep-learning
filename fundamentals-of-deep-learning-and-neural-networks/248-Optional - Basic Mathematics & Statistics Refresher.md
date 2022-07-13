@@ -231,7 +231,8 @@ Note: we will get used to these terms soon; no need to worry too much about it. 
 
 
 ### Measures of Central Tendencies
-* **Mean**: The mean is the average of a data set. For example, take a list of numbers: $[10, 20, 40, 10, 70]$. Mean = $(10 + 20 + 40 + 10 + 70) / 5 = 30$
+* **Mean**: The mean is the average of a data set. For example, take a list of numbers: $[10, 20, 40, 10, 70]$.  
+ Mean = $\frac{10 + 20 + 40 + 10 + 70}{5} = 30$
 * **Median**: The median is the middle of the set of numbers. To find the median, we first sort the list of numbers: $[10, 10, 20, 40, 70]$. The exact middle number, i.e., 20, is the median.
 * **Mode**: The mode is the most common number in a data set. In the above list of numbers, 10 has occurred twice while the other three numbers occurred once each. So, the mode is 10 here.
 
