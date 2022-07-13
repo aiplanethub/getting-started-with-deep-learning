@@ -24,7 +24,7 @@
 
 
 
-![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_370f73818fa44ea18386ca0bbc6a67c9.png)
+![aim_bird.gif](https://dphi-live.s3.amazonaws.com/media_uploads/aim_bird_b92cbeee45094ff588af4d6f8e89610e.gif)
 
 
 
@@ -45,7 +45,9 @@
 
 
 
+
 ![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_a34b5c4824c547c09cd62de74a1938d4.png)
+
 
 
 
@@ -74,6 +76,10 @@
 
 
 
+
+
+
+
 ## Why Deep Learning?
 * Older machine learning algorithms typically plateau (become constant) in performance after they reach a threshold of data.
 * Deep learning is one-of-a-kind algorithm whose performance continues to improve because more the data fed, the more the classifier is trained, resulting in outperforming the traditional models/ algorithms.
@@ -86,7 +92,15 @@
 
 
 
+
+
+
+
 ![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_069044c19a7a4bb0885f90f7e3e4da46.png)
+
+
+
+
 
 
 
@@ -132,7 +146,13 @@ recognize.
 
 
 
+
+
+
 ![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_2352add223d64d25b02a584024306a16.png)
+
+
+
 
 
 
@@ -149,7 +169,15 @@ recognize.
 
 
 
+
+
+
+
+
 ![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_94374f0ae72040b29b1676739e349e81.png)
+
+
+
 
 
 
@@ -178,7 +206,18 @@ Unfortunately, feature extraction is a separate and often a manual component in 
 This eliminates the need of domain expertise and hard core feature extraction.
 
 Have a look at the next figure to understand this better.
+
+
+
+
+
+
 ![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_c12e5356575941c0824b3b1636919765.png)
+
+
+
+
+
 
 
 ## Why is Deep Learning so popular?
@@ -196,7 +235,13 @@ Google trend for the keyword “Deep Learning”
 
 
 
+
+
 ![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_88fefb405fa3411dbd1a49158aa61198.png)
+
+
+
+
 
 
 
@@ -217,7 +262,7 @@ Google trend for the keyword “Deep Learning”
 
 
 
-## Deep Learning Applications in daily lives
+## Deep Learning Applications in Daily Lives
 ### Social Media
 One of the most common applications of Deep Learning is Automatic Friend Tagging Suggestions in Facebook or any other social media platform.
 
@@ -247,10 +292,13 @@ Add them [here](https://discuss.dphi.tech/t/day-1-introduction-to-deep-learning/
 ## Deep Learning Frameworks
 
 Both TensorFlow and PyTorch have their advantages as starting platforms to get into neural network programming.
+
 Traditionally, researchers and Python enthusiasts have preferred PyTorch, while TensorFlow has long been the favored option for building large scale deep learning models for use in production.
 However, the latest releases have seen the two libraries converge towards a more similar profile. As long as you stick to either TensorFlow or PyTorch as your deep learning framework, you can do nothing wrong.
-Slide Download Link
-You can download the slides here: https://docs.google.com/presentation/d/1XdenSAVaiFMdbtCqaG70y EHOdQLVr2ehnbQQPJDRo5E/edit?usp=sharing
+
+Slide Download Link: 
+[You can download the slides here](https://docs.google.com/presentation/d/1XdenSAVaiFMdbtCqaG70yEHOdQLVr2ehnbQQPJDRo5E/edit?usp=sharing).
 
 That’s it for the day. Thank you!
-Feel free to post any queries on Discuss or in the #help channel on Slack
+
+Feel free to post any queries on our [Discord Server](https://discord.gg/E2XfSEYm2W) or on [Discuss](https://discuss.dphi.tech/t/day-1-introduction-to-deep-learning/685).
