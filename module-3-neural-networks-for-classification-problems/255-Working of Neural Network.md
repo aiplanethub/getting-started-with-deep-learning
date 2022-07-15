@@ -73,72 +73,162 @@ Was she able to succeed? Watch the video to find out.
 
 
 
-Both the models above are unable to classify our data into 2 classes because in both the cases the red points (significant in number) is present on the both sides of the line.
+Both the models above are unable to classify our data into 2 classes because in both cases the red points (significant in number) are present on both sides of the line.
+
 We thus need something better than a straight line to divide our data into 2 separate classes.
 
-Non-linear Boundary
-Realistic data is much more complex and not always classified by a straight line. For this purpose, we need a non-linear boundary to separate our data.
-Perceptron model works on the most basic form of a neural network, but for realistic data classification, we use Deep Neural Network or Multi Layer Perceptrons.
+Realistic data is much more complex and not always classified by a straight line. For this purpose, we need a non-linear boundary to separate our data. Perceptron model works on the most basic form of a neural network, but for realistic data classification, we use Deep Neural Network or Multi-Layer Perceptrons.
 
 
-Neural Network Architecture
-
-Neural Network: Architecture
-Neural Networks are complex structures made of artificial neurons
-that can take in multiple inputs to produce a single output.
-This is the primary job of a Neural Network
-Simple terms, to transform input into a meaningful output
-NN consists of an input and output layer with one or more hidden layers.
 
 
-Neural Network Components
 
-This yellow layer is the input layer.
-Outermost yellow layer is the input layer. A neuron is the basic unit of a neural network. In this case the input layer has three neurons. The inputs are simply the measure of our features. For example, in the boston house price data in the Linear Regression with tf.keras notebook, there were 13 input features, so the input layer will have 13 neurons.
-Neural Network Components
 
-This is the second hidden layer.
-This blue layer is the first hidden layer.
-The blue layer and the green layer are two hidden layers which are not directly observable while building the neural network. The number of neurons in these hidden layers are initially assigned by us and we can find the optimal number of neurons in hidden layer through hyperparameter tuning.
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_6a4d1b7f66d14b9a9d94a687550aa3f9.png)
 
-Neural Network Components
 
-This is the output layer
-The red layer is the output layer. This is the last layer of a neural network that produces the required output. For example, ‘MEDV’ (Median value of owner-occupied homes in 1000 USD's) was the output layer in boston
-house price dataset.
-Image source: UpGrad
-Neural Network Components
-Connection
 
-Connection
-Weights: There is some weight assigned for each connection. Weights represent scalar (constant) multiplication. Initially these are assigned randomly, then these weights are updated as per their importance in predicting the output. The updation of weight is done through back propagation (you will know this in upcoming slides).
-Neural Network Components
 
-Each circle in a layer is known as a neuron. The input layer has 3 neurons
-Now we know each neuron in input layer has a value given in the dataset. Some random weights are assigned for each connection. When the value of each neuron in input layer is multiplied with its respective weight for the next connecting neuron and added all together, produces the value of next connecting neuron in
 
-the next layer. Don’t worry if you don’t understand here. An example of this
-calculation is shown in next slides.
-Calculating Value of a Neuron
-A simple example on how the values of each neurons are calculated using weights and input
+
+
+
+
+
+
+## Neural Network Architecture
+
+* Neural Networks are complex structures made of artificial neurons that can take in multiple inputs to produce a single output.
+* This is the primary job of a Neural Network
+* Simple terms, to transform input into a meaningful output
+* NN consists of an input and output layer with one or more hidden layers.
+
+
+
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_e4f480772c4448ac932459f8552ef717.png)
+
+
+
+
+
+
+
+
+## Neural Network Components
+
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_ddcf349aa6d648f388cc73d577850660.png)
+
+
+
+
+
+
+
+
+
+* Outermost yellow layer is the input layer. A neuron is the basic unit of a neural network. In this case, the input layer has three neurons. The inputs are simply the measure of our features. For example, in the Boston house price data in the Linear Regression with tf.keras notebook, there were 13 input features, so the input layer will have 13 neurons.
+
+
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_b2ac3fa5447f4a7caf3fdea90c419f7e.png)
+
+
+
+
+
+
+
+
+
+* The blue layer and the green layer are two hidden layers that are not directly observable while building the neural network. The number of neurons in these hidden layers are initially assigned by us and we can find the optimal number of neurons in the hidden layer through hyperparameter tuning.
+
+
+
+
+
+
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_cb512dffd1fc4204a5329d29434f7700.png)
+
+
+
+
+
+
+
+
+
+##### Image source: UpGrad
+* The red layer is the output layer. This is the last layer of a neural network that produces the required output. For example, ‘MEDV’ (Median value of owner-occupied homes in 1000's USD) was the output layer in [boston house price dataset](https://github.com/dphi-official/Deep_Learning_Bootcamp/blob/master/Linear_Regression/Linear_Regression_with_tf_keras_Beginners.ipynb).
+
+
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_e511ebe5c50e4a948ca0a30d50cabac9.png)
+
+
+
+
+
+
+
+
+* Weights: There is some weight assigned for each connection. Weights represent scalar (constant) multiplication. Initially, these are assigned randomly, then these weights are updated as per their importance in predicting the output. The updation of weight is done through backpropagation (you will know this in upcoming slides).
+
+
+
+
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_b9cc2da81f58475a8e1683a1d528f3f0.png)
+
+
+
+
+
+
+
+
+
+
+* Now we know each neuron in the input layer has a value given in the dataset. Some random weights are assigned for each connection. When the value of each neuron in the input layer is multiplied with its respective weight for the next connecting neuron and added all together, produces the value of the next connecting neuron in the next layer. Don’t worry if you don’t understand here. An example of this calculation is shown in the next slides.
+
+## Calculating Value of a Neuron
+
+A simple example of how the values of each neuron are calculated using weights and input
 values.
 
-V
-w1
-We can give an activation function for this layer.
-V1
-w2
-Here v is calculated as
-(v1 * w1) + (v2 * w2) + (v3 * w3)
-V2
-w3
-Note: If this was a linear regression model, we would add a bias ‘b’ [hope you remember equation of linear regression]
-V3
-Calculating Value of a Neuron
 
-In the previous slide: w1 is the weight from first neuron of input layer to the first neuron of hidden layer. Same goes with w2 and w3
-The value of each other neuron in each hidden layer is calculated in the same way we calculated the value of the first neuron of the first hidden layer in the previous slide.
-Similarly, the value of output layer is calculated.
+
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_7db0bf05d9d541d7b09e4ad993a87ab8.png)
+
+
+
+
+
+
+
+
+
+* In the previous slide: w1 is the weight from first neuron of input layer to the first neuron of hidden layer. Same goes with w2 and w3
+* The value of each other neuron in each hidden layer is calculated in the same way we calculated the value of the first neuron of the first hidden layer in the previous slide.
+* Similarly, the value of output layer is calculated.
+
 Let’s understand what we learnt using a
 simple task
 Task - Making tea
