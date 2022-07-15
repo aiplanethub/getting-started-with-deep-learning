@@ -412,13 +412,20 @@ He decides his next position based on his current position and stops when he get
 
 
 
-Gradient Descent in action
+### Gradient Descent in action
+
+
+
+
+
+![image1.gif](https://dphi-live.s3.amazonaws.com/media_uploads/image1_a304b46f3cbf4f42bed618e4cac79a50.gif)
 
 
 
 
 Now, think of the valley as a cost function. The objective of GD is to minimise the cost function (by updating it’s parameter values). In this case the minimum value would be 0.
-What does a cost function look like?
+
+### What does a cost function look like?
 
 J is the cost function, plotted along it’s parameter values. Notice the crests and troughs.
 How we navigate the cost function via GD
