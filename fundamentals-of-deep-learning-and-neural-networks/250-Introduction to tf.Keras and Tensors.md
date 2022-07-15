@@ -105,8 +105,10 @@ TensorFlow will be imported and available for your use on running this cell!
 ### Check the version of Tensorflow
 
 * Open a Jupyter Notebook/Google Colab. In a cell, type and execute the following command:  
-`import tensorflow as tf`
-`print(tf.__version__)`
+```
+import tensorflow as tf
+print(tf.__version__)
+```
 * Ensure the displayed version starts with 2, i.e., ensure Tensorflow 2 has been installed.
 * Google Colab uses TensorFlow 2 by default.
 
