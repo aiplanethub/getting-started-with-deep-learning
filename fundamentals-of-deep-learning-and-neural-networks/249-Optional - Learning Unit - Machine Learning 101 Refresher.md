@@ -143,7 +143,7 @@ Too many synonyms to memorize? Let me put them all down in one place for better 
 
 
 
-* To use an analogy, let's say you teach a child to multiply by letting the kid train on the small multiplication table, i.e., everything from 1*1 to 9*9.
+* To use an analogy, let's say you teach a child to multiply by letting the kid train on the small multiplication table, i.e., everything from $1\times1$ to $9\times9$.
 * Next, you test whether the kid can perform the same multiplications. The result is a success. The kid gets it right almost every time.
 * What's the problem here?
 * You don't know if the kid understands multiplication or has simply memorized the table!
@@ -166,7 +166,7 @@ Too many synonyms to memorize? Let me put them all down in one place for better 
 
 ### Train and Test Dataset
 
-* So what you would do instead is test the kid on multiplications like 11*12 outside the table.
+* So what you would do instead is test the kid on multiplications like $11\times12$ outside the table.
 * This is precisely why we need to test machine learning models on unseen or test data. Otherwise, we cannot know whether the algorithm has learned a generalizable pattern or has memorized the training data.
 * TRAINING DATA: The observations in the training set form the experience that the algorithm uses to learn.
 * TEST DATA: The test set is a set of observations used to evaluate the
