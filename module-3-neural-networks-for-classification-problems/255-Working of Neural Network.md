@@ -428,27 +428,92 @@ Now, think of the valley as a cost function. The objective of GD is to minimise 
 ### What does a cost function look like?
 
 J is the cost function, plotted along it’s parameter values. Notice the crests and troughs.
-How we navigate the cost function via GD
-Backward Propagation
-What is Backward Propagation in NN?
-Backward propagation means we are moving in only one direction, from output to the input, in a neural network.
-Backward propagation is also called as Back Propagation in short.
-Backward Propagation
-Input Layer Hidden Layer Output Layer
-NOTE: Stochastic Gradient Descent (SGD) that the instructor is sometimes mentioning in the next video is just a type of Gradient Descent. Don’t worry about its exact working.
-What is Backward Propagation in NN?
 
-Backpropagation Calculus (Optional)
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_91ec84dd0dbf406f923a52444bbb4a7d.png)
+
+
+
+
+### How we navigate the cost function via GD
+
+
+
+
+
+
+
+![image1.gif](https://dphi-live.s3.amazonaws.com/media_uploads/image1_f36121f4409546dcaef8053cba6de053.gif)
+
+
+
+
+
+
+
+
+
+
+## Backward Propagation
+
+### What is Backward Propagation in NN?
+
+* Backward propagation means we are moving in only one direction, from output to the input, in a neural network.
+* Backward propagation is also called Back Propagation in short.
+
+
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_dc12b8701ff44842b014fe635ce18d8d.png)
+
+
+
+
+
+
+
+
+
+NOTE: Stochastic Gradient Descent (SGD) that the instructor is sometimes mentioning in the next video is just a type of Gradient Descent. Don’t worry about its exact working.
+
+
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XE3krf3CQls?start=100" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+
+
+
+
+### Backpropagation Calculus (Optional)
 If you like understanding things through Mathematics, this is for you! ????
 
-Summarising the working of a NN
-A Neural Network passes data to model via forward propagation.
-When it reaches the last(output) layer, it calculates loss on output.
-It then back propagates information about the loss/error, in reverse through the network to the input layer, so that it can alter the parameters weights.
-Gradient Descent is calculated via backpropagation and works to minimise this loss:
-By calculating gradient of loss function according to weights
-Updating weights accordingly
-Download link to slides
-https://docs.google.com/presentation/d/1giN8HnKYKvLJ59 OMJYglU4H0uMCjnqZb7QsQ1lXkXhk/edit?usp=sharing
-That’s it for this unit. Thank you!
-Feel free to post any queries on Discuss or in the #help channel on Slack
+
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tIeHLnjs5U8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+
+
+
+## Summarising the working of a NN
+* A Neural Network passes data to model via forward propagation.
+* When it reaches the last(output) layer, it calculates loss on output.
+* It then back propagates information about the loss/error, in reverse through the network to the input layer, so that it can alter the parameters weights.
+* Gradient Descent is calculated via backpropagation and works to minimise this loss:
+  * By calculating gradient of loss function according to weights
+  * Updating weights accordingly
+
+Download the slides for this module [from here](https://docs.google.com/presentation/d/1giN8HnKYKvLJ59OMJYglU4H0uMCjnqZb7QsQ1lXkXhk/edit?usp=sharing).
