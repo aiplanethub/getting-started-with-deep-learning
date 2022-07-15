@@ -34,7 +34,7 @@ Was she able to succeed? Watch the video to find out.
 
 ### Classification
 * Classification divides the given data points into two or more classes.
-* For example, in the given image, we are classifying the data into classes A and B.
+* For example, in the given image, we classify the data into classes A and B.
 * The data in the image are classified with a straight line (i.e., linear boundary)
 
 
@@ -184,7 +184,7 @@ Realistic data is much more complex and not always classified by a straight line
 
 
 
-* Weights: There is some weight assigned for each connection. Weights represent scalar (constant) multiplication. Initially, these are assigned randomly; then, these weights are updated as per their importance in predicting the output. The updation of weight is done through backpropagation (you will know this soon).
+* Weights: There is some weight assigned for each connection. Weights represent scalar (constant) multiplication. Initially, these are assigned randomly; then, these weights are updated as per their importance in predicting the output. The updation of weight is done through Backpropagation (you will know this soon).
 
 
 
@@ -203,7 +203,7 @@ Realistic data is much more complex and not always classified by a straight line
 
 
 
-* Now we know each neuron in the input layer has a value given in the dataset. Some random weights are assigned for each connection. When the value of each neuron in the input layer is multiplied with its respective weight for the next connecting neuron and added all together, produces the value of the next connecting neuron in the next layer. Don't worry if you don't understand here. An example of this calculation is shown in the next section.
+* Now, we know each neuron in the input layer has a value given in the dataset. Some random weights are assigned for each connection. We multiply the value of each neuron with the weight for the next connecting neuron and add them all together, producing the value of the next connecting neuron in the next layer. Don't worry if you don't understand here. An example of this calculation is shown in the next section.
 
 ## Calculating Value of a Neuron
 
@@ -225,8 +225,8 @@ values.
 
 
 
-* In the above image: w1 is the weight from the first neuron of the input layer to the first neuron of the hidden layer. The same goes with w2 and w3.
-* The value of each other neuron in each hidden layer is calculated in the same way we calculated the value of the first neuron of the first hidden layer in the previous image.
+* In the above image: w1 is the weight from the input layer's first neuron to the hidden layer's first neuron. The same goes with w2 and w3.
+* The value of each other neuron in each hidden layer is calculated the same way we calculated the value of the first neuron of the first hidden layer in the previous image.
 * Similarly, the value of the output layer is calculated.
 
 Let's understand what we learned using a simple task.
@@ -235,14 +235,14 @@ Let's understand what we learned using a simple task.
 
 Now imagine you are a Tea Master.
 The ingredients used to make tea (water, tea leaves, milk, sugar, and spices)
-are the "neurons" since they make up the starting points of the process. The amount of each ingredient represents the "weight." Once you put in the tea leaves in the water and add the sugar, spices, and milk in the pan, all the ingredients will mix and transform into another state. This transformation process represents the "activation function."
+are the "neurons" since they make up the starting points of the process. The amount of each ingredient represents the "weight." Once you put the tea leaves in the water and add the sugar, spices, and milk in the pan, all the ingredients will mix and transform into another state. This transformation process represents the "activation function."
 
 ### Hidden Layers and output Layer
-* The layer or layers, hidden between the input and output layer, are known as the hidden layers. It is called the hidden layer since it is always hidden from the external world. The main computation of a Neural Network takes place in the hidden layers. So, the hidden layer takes all the inputs from the input layer and performs the necessary calculation to generate a result. This result is then forwarded to the output layer so that the user can view the result of the computation.
+* The layers hidden between the input and output layer are known as the hidden layers. It is called the hidden layer since it is always hidden from the external world. The main computation of a Neural Network takes place in the hidden layers. So, the hidden layer takes all the inputs from the input layer and performs the necessary calculation to generate a result. This result is then forwarded to the output layer so the user can view the computation result.
 * In our tea-making example, when we mix all the ingredients, the formulation changes its state and color on heating. The ingredients represent the hidden layers. Here heating represents the activation process that finally delivers the result – tea.
 
 ### Summary of Tea Example
-* Input layers: water, tea leaves, sugar, milk and spices
+* Input layers: water, tea leaves, sugar, milk, and spices
 * Hidden layers: all the above ingredients mixed with certain weights
 * Activation function: The heating process
 * Output layer: Tea
@@ -293,30 +293,30 @@ If you like understanding things through Mathematics, this is for you! ????
 
 ## Working of a Neural Network
 
-In the upcoming sections, we will be discussing the working of Neural Networks that includes 3 main steps:
+In the upcoming sections, we will be discussing the working of Neural Networks, which includes three main steps:
 1. Forward Propagation
 2. Gradient Descent
 3. Backward Propagation
 
-What are they? These are the three important pillars of the neural network working and we will learn more about their prominence now.
+What are they? These are the three important pillars of the neural network, and we will learn more about their prominence now.
 
 ### Why Forward Propagation in NN?
 
-* In order to generate output or desired results, we need to feed input data. Forward propagation helps us do that in Neural Networks. The data in NN should be fed in the forward direction only.
+* We need to feed input data to generate output or desired results. Forward propagation helps us do that in Neural Networks. The data in NN should be fed in the forward direction only.
 
 ### Why Gradient Descent?
 
-* Just think of Gradient Descent as a technique to minimize the loss/cost function. It helps in making the model perform better.
+* Think of Gradient Descent as a technique to minimize the loss/cost function. It helps in making the model perform better.
 
 ### Why Backward Propagation in NN?
 
-* When you generate some output through forward propagation, there are some errors generated in the process. To reduce these errors, we traverse back from the output layer to the input layer and update the initially assigned weights.
+* When you generate some output through forward propagation, some errors are generated. To reduce these errors, we traverse back from the output layer to the input layer and update the initially assigned weights.
 
 ## Forward Propagation
 
 ### What is Forward Propagation in NN?
-* Well, if you break down the words, forward implies moving ahead and propagation is a term for saying spreading of anything.
-* Forward propagation means we are moving in only one direction, from input to the output, in a neural network.
+* Well, if you break down the words, forward implies moving ahead, and propagation is a term for saying spreading of anything.
+* Forward propagation means moving in only one direction in a neural network, from input to output.
 
 
 
@@ -327,15 +327,15 @@ What are they? These are the three important pillars of the neural network worki
 
 
 
-The video below takes a Bank Transaction Dataset Example. The dataset has two features; the number of children and accounts and the objective is to predict how many transactions will a user make at the bank.
+The video below takes a Bank Transaction Dataset Example. The dataset has two features; the number of children and accounts, and the objective is to predict how many transactions a user will make at the bank.
 
 The video covers the following aspects:
 * How neural network model uses data to make predictions
 * How the information is transferred from the input layer to the output layer (through weights and hidden layers)
 * The calculation of the value of each neuron in hidden layers using weights and the input values
-* And finally calculating the output
+* And finally, calculating the output
 
-Note: In the video, the inputs (2,3) and weight allocation (1, -1, etc) are randomly assigned for the purpose of explanation. NO need to bother to know how they started appearing all of a sudden!
+Note: In the video, the inputs (2,3) and weights (1, -1, etc.) are randomly assigned for an explanation. NO need to bother to know how they started appearing all of a sudden!
 
 
 
@@ -355,7 +355,7 @@ Note: In the video, the inputs (2,3) and weight allocation (1, -1, etc) are rand
 
 ## Gradient Descent
 
-Gradient Descent (GD) is an optimization technique in the machine learning process that helps us minimize the cost function by learning the weights of the model such that it fits the training data well.
+Gradient Descent (GD) is an optimization technique in the machine learning process that helps us minimize the cost function by learning the model weights to fit the training data well.
 
 Gradient = rate of inclination or declination of a slope (how steep a slope is and in which direction it is going) of a function at some point.
 
@@ -396,7 +396,7 @@ Imagine a person at the top of a mountain who wants to get to the bottom of the 
 
 He goes down the slope and takes large steps when the slope is steep and small steps when the slope is less steep.
 
-He decides his next position based on his current position and stops when he gets to the bottom of the valley which was his goal.
+He decides on his next position based on his current position and stops when he gets to the bottom of the valley, which was his goal.
 
 
 
@@ -423,11 +423,11 @@ He decides his next position based on his current position and stops when he get
 
 
 
-Now, think of the valley as a cost function. The objective of GD is to minimise the cost function (by updating it's parameter values). In this case the minimum value would be 0.
+Now, think of the valley as a cost function. The objective of GD is to minimize the cost function (by updating its parameter values). In this case, the minimum value would be 0.
 
 ### What does a cost function look like?
 
-J is the cost function, plotted along it's parameter values. Notice the crests and troughs.
+J is the cost function, plotted along its parameter values. Notice the crests and troughs.
 
 
 
@@ -459,8 +459,8 @@ J is the cost function, plotted along it's parameter values. Notice the crests a
 
 ### What is Backward Propagation in NN?
 
-* Backward propagation means we are moving in only one direction, from output to the input, in a neural network.
-* Backward propagation is also called Back Propagation in short.
+* Backward propagation means moving in only one direction in a neural network, from output to input.
+* Backward propagation is also called Backpropagation in short.
 
 
 
@@ -476,7 +476,7 @@ J is the cost function, plotted along it's parameter values. Notice the crests a
 
 
 
-NOTE: Stochastic Gradient Descent (SGD) that the instructor is sometimes mentioning in the next video is just a type of Gradient Descent. Don't worry about its exact working.
+NOTE: Stochastic Gradient Descent (SGD) that the instructor sometimes mentions in the following video is just a type of Gradient Descent. Don't worry about its exact working.
 
 
 
@@ -509,11 +509,11 @@ If you like understanding things through Mathematics, this is for you! ????
 
 
 ## Summarising the working of a NN
-* A Neural Network passes data to model via forward propagation.
+* A Neural Network passes data to the model via forward propagation.
 * When it reaches the last(output) layer, it calculates loss on output.
-* It then back propagates information about the loss/error, in reverse through the network to the input layer, so that it can alter the parameters weights.
-* Gradient Descent is calculated via backpropagation and works to minimise this loss:
-  * By calculating gradient of loss function according to weights
+* It then back propagates information about the loss/error, in reverse, through the network to the input layer so that it can alter the parameters/weights.
+* Gradient Descent is calculated via Backpropagation and works to minimize this loss:
+  * By calculating the gradient of loss function according to weights
   * Updating weights accordingly
 
 Download the slides for this module [from here](https://docs.google.com/presentation/d/1giN8HnKYKvLJ59OMJYglU4H0uMCjnqZb7QsQ1lXkXhk/edit?usp=sharing).
