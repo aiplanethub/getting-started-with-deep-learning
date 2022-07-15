@@ -210,5 +210,5 @@ You can download the [Tensorflow Operations Notebook](https://github.com/dphi-of
 
 ### Slides Download Link
 
-You can download the slides for this module from the below link: [Module 1 Day 3 Slides](
+You can download the slides for this module from the below link: [Day 3 Slides](
 https://docs.google.com/presentation/d/1aFh443T4jAy6LVUv5BwPFhlig7gAyq0IahAb4r-kd5Y/edit?usp=sharing)
