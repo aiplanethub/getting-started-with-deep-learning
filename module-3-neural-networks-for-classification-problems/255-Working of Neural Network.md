@@ -1,15 +1,15 @@
 ## Learning Objectives
-* Story time of A.N.N & Non-Linear Boundary
+* Story time of ANN & Non-Linear Boundary
 * Neural Network Architecture
 * Forward Propagation
 * Gradient Descent - Refresher
 * Backpropagation
 
-## The Story of a Neural Network, also known as Artificial Neural Network - A.N.N.
+## The Story of a Neural Network, also known as Artificial Neural Network - ANN.
 
 ### ANN
 
-ANN is a unique computer who doesn’t want to be programmed like others. She wants to learn on her own, even if it takes longer and involves a lot of trial and error.
+ANN is a unique computer who doesn't want to be programmed like others. She wants to learn independently, even if it takes longer and involves a lot of trial and error.
 Was she able to succeed? Watch the video to find out.
 
 
@@ -33,9 +33,9 @@ Was she able to succeed? Watch the video to find out.
 
 
 ### Classification
-* Classification is a process of dividing the given data points into two or more classes.
-* For example, in the given image we are classifying the data into two classes class A and class B.
-* The data in the image are classified with a straight line (i.e. linear boundary)
+* Classification divides the given data points into two or more classes.
+* For example, in the given image, we are classifying the data into classes A and B.
+* The data in the image are classified with a straight line (i.e., linear boundary)
 
 
 
@@ -73,11 +73,11 @@ Was she able to succeed? Watch the video to find out.
 
 
 
-Both the models above are unable to classify our data into 2 classes because in both cases the red points (significant in number) are present on both sides of the line.
+Both the models above cannot classify our data into two classes because, in both cases, the red points (significant in number) are present on both sides of the line.
 
-We thus need something better than a straight line to divide our data into 2 separate classes.
+We thus need something better than a straight line to divide our data into two separate classes.
 
-Realistic data is much more complex and not always classified by a straight line. For this purpose, we need a non-linear boundary to separate our data. Perceptron model works on the most basic form of a neural network, but for realistic data classification, we use Deep Neural Network or Multi-Layer Perceptrons.
+Realistic data is much more complex and not always classified by a straight line. For this purpose, we need a non-linear boundary to separate our data. The perceptron model works on the most basic form of a neural network, but we use Deep Neural Network or Multi-Layer Perceptrons for realistic data classification.
 
 
 
@@ -148,7 +148,7 @@ Realistic data is much more complex and not always classified by a straight line
 
 
 
-* The blue layer and the green layer are two hidden layers that are not directly observable while building the neural network. The number of neurons in these hidden layers are initially assigned by us and we can find the optimal number of neurons in the hidden layer through hyperparameter tuning.
+* The blue and green layers are two hidden layers that are not directly observable while building the neural network. We initially assign the number of neurons in these hidden layers, and we can find the optimal number of neurons in the hidden layer through hyperparameter tuning.
 
 
 
@@ -169,7 +169,7 @@ Realistic data is much more complex and not always classified by a straight line
 
 
 ##### Image source: UpGrad
-* The red layer is the output layer. This is the last layer of a neural network that produces the required output. For example, ‘MEDV’ (Median value of owner-occupied homes in 1000's USD) was the output layer in [boston house price dataset](https://github.com/dphi-official/Deep_Learning_Bootcamp/blob/master/Linear_Regression/Linear_Regression_with_tf_keras_Beginners.ipynb).
+* The red layer is the output layer. This is the last layer of a neural network that produces the required output. For example, 'MEDV' (Median value of owner-occupied homes in 1000's USD) was the output layer in [boston house price dataset](https://github.com/dphi-official/Deep_Learning_Bootcamp/blob/master/Linear_Regression/Linear_Regression_with_tf_keras_Beginners.ipynb).
 
 
 
@@ -184,7 +184,7 @@ Realistic data is much more complex and not always classified by a straight line
 
 
 
-* Weights: There is some weight assigned for each connection. Weights represent scalar (constant) multiplication. Initially, these are assigned randomly, then these weights are updated as per their importance in predicting the output. The updation of weight is done through backpropagation (you will know this soon).
+* Weights: There is some weight assigned for each connection. Weights represent scalar (constant) multiplication. Initially, these are assigned randomly; then, these weights are updated as per their importance in predicting the output. The updation of weight is done through backpropagation (you will know this soon).
 
 
 
@@ -203,7 +203,7 @@ Realistic data is much more complex and not always classified by a straight line
 
 
 
-* Now we know each neuron in the input layer has a value given in the dataset. Some random weights are assigned for each connection. When the value of each neuron in the input layer is multiplied with its respective weight for the next connecting neuron and added all together, produces the value of the next connecting neuron in the next layer. Don’t worry if you don’t understand here. An example of this calculation is shown in the next section.
+* Now we know each neuron in the input layer has a value given in the dataset. Some random weights are assigned for each connection. When the value of each neuron in the input layer is multiplied with its respective weight for the next connecting neuron and added all together, produces the value of the next connecting neuron in the next layer. Don't worry if you don't understand here. An example of this calculation is shown in the next section.
 
 ## Calculating Value of a Neuron
 
@@ -229,13 +229,13 @@ values.
 * The value of each other neuron in each hidden layer is calculated in the same way we calculated the value of the first neuron of the first hidden layer in the previous image.
 * Similarly, the value of the output layer is calculated.
 
-Let’s understand what we learned using a simple task.
+Let's understand what we learned using a simple task.
 
 ### Task - Making tea
 
 Now imagine you are a Tea Master.
 The ingredients used to make tea (water, tea leaves, milk, sugar, and spices)
-are the “neurons” since they make up the starting points of the process. The amount of each ingredient represents the “weight.” Once you put in the tea leaves in the water and add the sugar, spices, and milk in the pan, all the ingredients will mix and transform into another state. This transformation process represents the “activation function.”
+are the "neurons" since they make up the starting points of the process. The amount of each ingredient represents the "weight." Once you put in the tea leaves in the water and add the sugar, spices, and milk in the pan, all the ingredients will mix and transform into another state. This transformation process represents the "activation function."
 
 ### Hidden Layers and output Layer
 * The layer or layers, hidden between the input and output layer, are known as the hidden layers. It is called the hidden layer since it is always hidden from the external world. The main computation of a Neural Network takes place in the hidden layers. So, the hidden layer takes all the inputs from the input layer and performs the necessary calculation to generate a result. This result is then forwarded to the output layer so that the user can view the result of the computation.
@@ -386,13 +386,13 @@ A simple way to memorize:
 
 * At the start, the parameter values of the hypothesis are randomly initialized (can be 0)
 * Then, Gradient Descent iteratively (one step at a time) adjusts the parameters and gradually finds the best values for them by minimizing the cost
-* In this case, we’ll use it to find the parameters m and c of the linear regression model
+* In this case, we'll use it to find the parameters m and c of the linear regression model
 * m = slope of a line that we just learned about  
 c = bias/intercept: where the line crosses the Y axis.
 
 ### Gradient Descent - An Example
 
-Imagine a person at the top of a mountain who wants to get to the bottom of the valley below the mountain through the fog (he cannot see clearly ahead and only can look around the point he’s standing at)
+Imagine a person at the top of a mountain who wants to get to the bottom of the valley below the mountain through the fog (he cannot see clearly ahead and only can look around the point he's standing at)
 
 He goes down the slope and takes large steps when the slope is steep and small steps when the slope is less steep.
 
@@ -423,11 +423,11 @@ He decides his next position based on his current position and stops when he get
 
 
 
-Now, think of the valley as a cost function. The objective of GD is to minimise the cost function (by updating it’s parameter values). In this case the minimum value would be 0.
+Now, think of the valley as a cost function. The objective of GD is to minimise the cost function (by updating it's parameter values). In this case the minimum value would be 0.
 
 ### What does a cost function look like?
 
-J is the cost function, plotted along it’s parameter values. Notice the crests and troughs.
+J is the cost function, plotted along it's parameter values. Notice the crests and troughs.
 
 
 
@@ -476,7 +476,7 @@ J is the cost function, plotted along it’s parameter values. Notice the crests
 
 
 
-NOTE: Stochastic Gradient Descent (SGD) that the instructor is sometimes mentioning in the next video is just a type of Gradient Descent. Don’t worry about its exact working.
+NOTE: Stochastic Gradient Descent (SGD) that the instructor is sometimes mentioning in the next video is just a type of Gradient Descent. Don't worry about its exact working.
 
 
 
