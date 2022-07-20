@@ -1,2 +1,3 @@
-<h1>Session: Dive Deep into Vanilla Neural Networks</h1>
+The Session Slides can be found [here](https://docs.google.com/presentation/d/1rtq6WhddwAhzjXnJO-03YA6zsGnPW55y/edit?usp=sharing&ouid=103295128566172156165&rtpof=true&sd=true).
+
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/oj41Qm0DKN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
