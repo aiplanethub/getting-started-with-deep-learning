@@ -381,7 +381,7 @@ For utilizing the different types of layers we have available, Tensorflow provid
 
 `from tensorflow.keras import layers`
 
-Dense Layer
+### Dense Layer
 
 * A dense layer is just a regular layer of neurons in a neural network.
 * It is the most common and frequently used layer.
