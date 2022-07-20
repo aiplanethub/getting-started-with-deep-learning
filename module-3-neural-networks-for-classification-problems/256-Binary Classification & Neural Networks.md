@@ -411,43 +411,40 @@ You DON’T need to memorize code given the below notebook. But you must underst
 
 [Notebook for Model Building](https://github.com/dphi-official/Deep_Learning_Bootcamp/blob/master/DL%20For%20Classification/%20DL_Day6_Building_a_DL_Model.ipynb)
 * Download
-* Extract zip file
+* Extract the zip file
 * Open in Jupyter Notebook or Upload on Google Colab
-* 
-Error functions and Optimizers
-36
-Error/Loss Functions
+ 
+## Error functions and Optimizers
+
+### Error/Loss Functions
 
 In most learning networks, the error is calculated as the difference between the actual output and the predicted output.
-The function that is used to compute this error is known as Loss
-Function.
+
+The function that is used to compute this error is known as the Loss Function.
+
 Different loss functions will give different errors for the same prediction, and thus have a considerable effect on the performance of the model.
+
 For Binary Classification problems, the loss function usually used is known as Binary Cross Entropy Loss. We don’t need to go into the depths of this loss right now. This will be covered in later sessions.
-Optimization Function
+
+### Optimization Function
 
 Error is a function of internal parameters of model i.e weights and bias. For eg. m and c in a straight line equation.
+
 For accurate predictions, one needs to minimize the calculated error.
+
 In a neural network, this is done using back propagation. The current error is typically propagated backwards to a previous layer, where it is used to modify the weights and bias in such a way that the error is minimized.
+
 The weights are modified using a function called Optimization Function. Optimisation functions usually calculate the gradient.
+
 There are a number of Optimizers available such as Adam, RMSProp, SGD etc. We don’t need to get into the theory behind these optimizers right now as this will also be covered later.
+
 For our problem, we’ll be using RMSProp as the optimizer.
 
 Thus, the components of a neural network model i.e the activation function, loss function and optimization algorithm play a very important role in efficiently and effectively training a Model to produce accurate results.
+
 Different tasks require a different set of such functions to give the most optimum results.
-TIP
 
-Learning by Doing
-You DON’T need to memorize code given the below notebook. But you must understand what each line of code is doing and should be able to replicate it if required for solving other problems. We have provided explanation as much as possible, if you still don’t get certain things, please don’t hesitate to put it up on discuss forum!
-Your first Neural Network for Classification
 
-In this notebook, we’ll perform binary classification using a neural network to determine whether a person is suffering from a heart disease.
-https://github.com/dphi- official/Deep_Learning_Bootcamp/blob/master/DL%20For%20Classificat ion/DL_Day6_Binary_Classification.ipynb
-Download
-Extract Zip File
-Open in Jupyter Notebook or Upload on Google Colab
-Slide Download Link
+### Slides Download Link
 
-You can download the slides here: https://docs.google.com/presentation/d/19GR6Tg2E06yyJO0b4KCth auhkQoasLZFICbNL6JZP38/edit?usp=sharing
-
-That’s it for the day. Thank you!
-Feel free to post any queries in the #help channel on Slack
+You can [download the slides for this module here](https://docs.google.com/presentation/d/19GR6Tg2E06yyJO0b4KCthauhkQoasLZFICbNL6JZP38/edit?usp=sharing)
