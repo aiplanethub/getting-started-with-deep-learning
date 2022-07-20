@@ -1,2 +1,5 @@
 <h1>Session: Introduction to Neural Networks for Classification</h1>
+
+The Session Slides can be found [here](https://docs.google.com/presentation/d/1D7vxZXJ0xBiYTTd8z4IvEbO9us5lxzMm/edit?usp=sharing&ouid=103295128566172156165&rtpof=true&sd=true).
+
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/LBE7BGdoEfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
