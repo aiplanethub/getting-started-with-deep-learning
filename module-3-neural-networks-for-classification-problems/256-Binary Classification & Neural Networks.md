@@ -187,119 +187,238 @@ formula right now.
 
 ### Sigmoid Function (Logistic Function/ Logit)
 * Take the linear regression function and put it into the Sigmoid function
-Sigmoid function outputs probability between 0 and 1
+* Sigmoid function outputs probability between 0 and 1
 
-Sigmoid Function (Logistic Function/ Logit)
-Sigmoid function outputs probability between 0 and 1 (y axis)
-Default probability threshold is set at 0.5 typically
-Class 0 – Below 0.5
-Class 1 – Above 0.5
 
-Activation Functions
-19
+
+
+
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_12217e01bd9b4978b67f3c40d91875e8.png)
+
+
+
+
+
+
+
+
+
+
+* Sigmoid function outputs probability between 0 and 1 (y-axis)
+* Default probability threshold is set at 0.5 typically
+   * Class 0 – Below 0.5
+   * Class 1 – Above 0.5
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_a2f71e91107a4aa8ba11b11d0268ba60.png)
+
+
+
+
+
+
+
+## Activation Functions
 
 Here’s what a Neural Network looks like. Let’s dive a bit into
 what exactly happens inside each neuron.
 
-Artificial Neuron – A Quick Recap
-Artificial neurons are the basic building blocks of a neural network. It can be considered as a computational unit that takes some inputs, applies some transformation on the input and fires the output. Below are typical steps for computation inside the neuron.
-An artificial neuron takes the inputs and their respective
-weights.
-It then applies dot products between input values & its weights and sums them up.
-Finally, it applies activation function on above summation and
-fires the output
-This can be written in a crude way as below –
-Output = Activation(Summation(Inputs*Weights + bias))
-Reference: machinelearningknowledge.ai
-Inside a Neuron
 
-A neuron takes input from the previous layer’s neurons
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_80736cd3873b4a5a81b0ffa6b5fc0086.png)
+
+
+
+
+
+
+
+
+### Artificial Neuron – A Quick Recap
+Artificial neurons are the basic building blocks of a neural network. It can be considered as a computational unit that takes some inputs, applies some transformation to the input, and fires the output. Below are typical steps for computation inside the neuron.
+1. An artificial neuron takes the inputs and their respective
+weights.
+2. It then applies dot products between input values & their weights and sums them up.
+3. Finally, it applies the activation function on the above summation and fires the output
+
+This can be written in a crude way as below: 
+
+Output = Activation(Summation(Inputs*Weights + Bias))
+
+Reference: machinelearningknowledge.ai
+
+### Inside a Neuron
+* A neuron takes input from the previous layer’s neurons
 (X0,X1,X2)
-It then multiplies each input with some weight (W0,W1,W2) and sums them
-Finally, it applies some activation function and sends/ fires an output.
-Activation Functions
+* It then multiplies each input with some weight (W0, W1, W2) and sums them
+* Finally, it applies some activation function and sends/ fires an output.
+
+
+
+
+![image1.gif](https://dphi-live.s3.amazonaws.com/media_uploads/image1_1428ef84a1754661b474dc51023641e4.gif)
+
+
+
+
+
+
+
+
+### Activation Functions
 
 Activations functions are an important part of an artificial neural network.
+
 They basically decide whether a neuron should be activated(fired) or not, based on whether each neuron’s input is relevant for the model’s prediction.
-Activation Functions
 
-The purpose of the activation function is to introduce non-linearity
-into the output of a neuron.
+The purpose of the activation function is to introduce non-linearity into the output of a neuron.
+
 Basically, it helps in creating a boundary like this:
-Rather than the linear boundaries(straight lines) that are unable to divide data into 2 classes:
-Types of Activation Functions
 
-Sigmoid Function
-ReLu
-tanH
-Leaky ReLU
-Softmax Function and more..
-Activation Functions - ReLU
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_d96c7db991b345bf835a3d8481cd150d.png)
+
+
+
+
+
+
+
+
+Rather than the linear boundaries(straight lines) that are unable to divide data into 2 classes:
+
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_223105ad83dd44ee84433222fe0d8e59.png)
+
+
+
+
+### Types of Activation Functions
+
+* Sigmoid Function
+* ReLu
+* tanh
+* Leaky ReLU
+* Softmax Function and more...
+
+#### Activation Functions - ReLU
 
 Similar to Sigmoid, we have a lot of other activation functions.
-Let’s have a look at ReLU(Rectified Linear Unit) , for example:
-Look at the y axis of both the graphs. Just how Sigmoid had a range of
-0 to 1, ReLU has a range of 0 to infinity.
-Activation Functions - tanH
 
-TanH / Hyperbolic Tangent is another popular Activation Function.
+Let’s have a look at ReLU(Rectified Linear Unit), for example:
+
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_901056072f604ac9bee98b8d9fdb31b6.png)
+
+
+
+
+
+
+
+Look at the y-axis of both graphs. Just how Sigmoid had a range of 0 to 1, ReLU has a range of 0 to infinity.
+
+#### Activation Functions - tanh
+
+Tanh / Hyperbolic Tangent is another popular Activation Function.
+
 It actually shares a few things in common with the sigmoid activation function. They both look very similar. But while a sigmoid function has a range of 0 and 1, Tanh has a range of -1 and 1.
+
+
+
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_ba5496e82ba04bcdab7bef62bf3b463f.png)
+
+
+
+
+
+
+
+
 There are a few more activation functions that we’ll read about later.
-General Guidelines
+
+### General Guidelines
 
 While choosing an activation function, you can keep the following guidelines in mind:
-Sigmoid is commonly used in the output layer. This is because it helps in giving a probability(value between 0 and 1) which is useful in Binary Classification.
-At places other than output layer, tanH usually performs better than Sigmoid.
-For Hidden layers, if you are not sure which activation function to use, just use ReLU as your default choice.
-Note: While these guidelines are helpful, choosing an activation function also depends on trial and error. You should try out a few activation functions and see which one works the best for you.
-Learn more about Activation Functions
+* Sigmoid is commonly used in the output layer. This is because it helps in giving a probability(value between 0 and 1) which is useful in Binary Classification.
+* At places other than the output layer, tanH usually performs better than Sigmoid.
+* For Hidden layers, if you are unsure which activation function to use, just use ReLU as your default choice.
 
-Animated guide to Activation Functions in Neural Network
-The above article explains the need of activation functions, the different types of activations as well as the advantages and disadvantages of each.
-We would recommend glancing over it just to get and idea through the various gifs present.
-slow but surely steady :)
-terms used there, we’ll get to it in some days. The process of learning is
-There is no need to dive into the mathematics or worry about the technical
-Layers
+Note: While these guidelines are helpful, choosing an activation function also depends on trial and error. You should try out a few activation functions and see which one works the best for you.
+
+### Learn more about Activation Functions
+* [Animated guide to Activation Functions in Neural Network](https://machinelearningknowledge.ai/activation-functions-neural-network/)
+* The above article explains the need for activation functions, the different types of activations, as well as the advantages and disadvantages of each.
+* We would recommend glancing over it just to get an idea through the various gifs present.
+* There is no need to dive into the mathematics or worry about the technical terms used there; we’ll get to it in some days. The process of learning is slow but surely steady :)
+
+### Layers
 The neurons in a neural network are divided into layers.
-While we know them with the names Input, Hidden and Output till now, Tensorflow doesn’t go by those names. It wants the user to specify the type of that particular layer.
-For utilising the different types of layers we have available, Tensorflow
-provides a submodule called layers that we can import as follows:
-from tensorflow.keras import layers
+
+
+
+![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_225350f667fb47638b702845aef566bc.png)
+
+
+
+While we know them by the names Input, Hidden and Output till now, Tensorflow doesn’t go by those names. It wants the user to specify the type of that particular layer.
+
+For utilizing the different types of layers we have available, Tensorflow provides a submodule called layers that we can import as follows:
+
+`from tensorflow.keras import layers`
+
 Dense Layer
 
-A dense layer is just a regular layer of neurons in a neural network.
-It is the most common and frequently used layer.
-Look at the middle layer in the previous image. Each neuron receives input from all the neurons in the previous layer and is thus called densely connected or dense.
-Each output of a dense layer is computed using every input to the
-layer.
-Dense is one particular type of layer, but there are many other types that we will see as we continue our deep learning journey.
-Creating models with Layers
-32
-Sequential Model API
+* A dense layer is just a regular layer of neurons in a neural network.
+* It is the most common and frequently used layer.
+* Look at the middle layer in the previous image. Each neuron receives input from all the neurons in the previous layer and is thus called densely connected or dense.
+* Each output of a dense layer is computed using every input to the layer.
+* Dense is one particular type of layer, but we will see many other types as we continue our deep learning journey.
+
+## Creating models with Layers
+
+### Sequential Model API
 
 There are two ways to create a model using the Layers API:
-1. A sequential model
+1. **A sequential model**  
 The most common type of model is the Sequential model, which is a linear stack of layers. In short, it allows you to build a model layer by layer. Each layer has weights that correspond to the layer that follows it.
-1. A functional model
+2. **A functional model**  
 Unlike the stack of layers in Sequential API, the functional API is a way to build graphs of layers.
-started.
-As a beginner, the sequential model is the recommended way to get
-TIP
 
-Learning by Doing
-You DON’T need to memorize code given the below notebook. But you must understand what each line of code is doing and should be able to replicate it if required for solving other problems. We have provided explanation as much as possible, if you still don’t get certain things, please don’t hesitate to put it up on discuss forum!
-Let’s practice building Sequential c Functional Models!
 
-https://github.com/dphi- official/Deep_Learning_Bootcamp/blob/master/DL%20For%20Classificat ion/%20DL_Day6_Building_a_DL_Model.ipynb
-Download
-Extract zip file
-Open in Jupyter Notebook or Upload on Google Colab
+As a beginner, the sequential model is the recommended way to get started.
+
+### TIP: Learning by Doing
+
+You DON’T need to memorize code given the below notebook. But you must understand what each line of code is doing and should be able to replicate it if required for solving other problems. We have provided explanations as much as possible; if you still don’t get certain things, please don’t hesitate to ask on the [Discord Server](https://discord.gg/E2XfSEYm2W)!
+
+### Let’s practice building Sequential & Functional Models!
+
+[Notebook for Model Building](https://github.com/dphi-official/Deep_Learning_Bootcamp/blob/master/DL%20For%20Classification/%20DL_Day6_Building_a_DL_Model.ipynb)
+* Download
+* Extract zip file
+* Open in Jupyter Notebook or Upload on Google Colab
+* 
 Error functions and Optimizers
 36
 Error/Loss Functions
 
-In most learning networks, error is calculated as the difference between the actual output and the predicted output.
+In most learning networks, the error is calculated as the difference between the actual output and the predicted output.
 The function that is used to compute this error is known as Loss
 Function.
 Different loss functions will give different errors for the same prediction, and thus have a considerable effect on the performance of the model.
