@@ -14,24 +14,24 @@ One of the most striking facts about neural networks is that they can compute an
 
 Neural networks have a kind of universality. No matter what function we want to compute, we know that there is a neural network that can do the job. That is why they are known as Universal Value Approximators.
 
-If you’re interested to learn more about it, this article gives a simple and mostly visual explanation of the universality theorem:
+If you're interested to learn more about it, this article gives a simple and primarily visual explanation of the universality theorem:
 
 http://neuralnetworksanddeeplearning.com/chap4.html
 
-Till now, you’ve worked with MLP and CNN, and that introduced you to the world of Deep Learning.
+Until now, you've worked with MLP and CNN, which introduced you to Deep Learning.
 
-But what’s more out there? Let’s have a look!
+But what's more out there? Let's have a look!
 
 
 ## Recurrent Neural Network
 
-Imagine that you are watching a movie. Most likely you would be able to connect to the scenes of the movie and understand what is happening, right? All our thinking goes in a flow and based on previous frame we can connect the current frame easily. Our thoughts have persistence.
+Imagine that you are watching a movie. Most likely, you would be able to connect to the scenes of the movie and understand what is happening, right? All our thinking goes in a flow, and we can easily connect to the current frame based on the previous frame. Our thoughts have persistence.
 
-Well, can we expect a neural network to make sense out of it? Not really!
+Well, can we expect a neural network to make sense of it? Not really!
 
 Our traditional neural network architectures (Feed-forward neural networks) cannot do this. Given a particular sequence of frames, they cannot predict or understand what is happening at each point in the movie.
 
-They have no memory of the input they receive and are bad at predicting what’s coming next. Because a feed-forward network only considers the current input, it has no understanding of sequence or time. It simply can’t remember anything about what happened in the past except its training.
+They have no memory of the input they receive and are bad at predicting what's coming next. Because a feed-forward network only considers the current input, it has no understanding of sequence or time. It simply can't remember anything about past events except its training.
 
 
 
@@ -45,7 +45,7 @@ They have no memory of the input they receive and are bad at predicting what’s
 
 This is where RNN comes in.
 
-In an RNN the information cycles through a loop. When it makes a decision, it considers the current input and also what it has learned from the inputs it received previously.
+In an RNN, the information cycles through a loop. When it makes a decision, it considers the current input and also what it has learned from the inputs it received previously.
 
 
 
@@ -59,7 +59,7 @@ In an RNN the information cycles through a loop. When it makes a decision, it co
 
 
 
-Below is side by side comparison of a regular Feed Forward Neural Network (MLP) and a Recurrent Neural Network (RNN). We can see that RNN is following a loop and learning from current and previous inputs.
+Below is a comparison of a regular Feed Forward Neural Network (MLP) and a Recurrent Neural Network (RNN). We can see that RNN is following a loop and learning from current and previous inputs.
 
 
 
@@ -73,13 +73,13 @@ Below is side by side comparison of a regular Feed Forward Neural Network (MLP) 
 
 ### Applications of RNN
 
-**Sentiment Classification**: This can be a task of simply classifying tweets into positive and negative sentiment. So here the input would be a tweet of varying lengths, while output is of a fixed type and size.
+**Sentiment Classification**: This can be a task of simply classifying tweets into positive and negative sentiments. So here, the input would be a tweet of varying lengths, while the output is of a fixed type and size.
 
 
 ![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_e86f99ccbd2f4a648b146200b0cbba1d.png)
 
 
-**Language Translation**: Imagine, we want to translate text from one language (English) to other language (French). Each language has its own semantics and would have varying lengths for the same sentence. So here the inputs as well as outputs are of varying lengths.
+**Language Translation**: Imagine we want to translate text from one language (English) to another language (French). Each language has its semantics and would have varying lengths for the same sentence. So here, the inputs, as well as outputs, are of varying sizes.
 
 
 
@@ -94,7 +94,7 @@ Below is side by side comparison of a regular Feed Forward Neural Network (MLP) 
 
 
 
-**Image Captioning**: Here, let’s say we have an image for which we need a textual description. So we have a single input – the image, and a series or sequence of words as output. Here the image might be of a fixed size, but the output is a description of varying lengths
+**Image Captioning**: Here, let's say we have an image for which we need a textual description. So we have a single input – the image, and a series or sequence of words as output. Here the image might be of a fixed size, but the output is a description of varying lengths.
 
 
 
@@ -117,10 +117,10 @@ Below is side by side comparison of a regular Feed Forward Neural Network (MLP) 
 
 https://magenta.tensorflow.org/assets/sketch_rnn_demo/index.html
 
-This application learns to complete drawings. It’s pretty fun to play around with. Try it out!
+This application learns to complete drawings. It's pretty fun to play around with. Try it out!
 
 
-You don’t need to do much here, just put a dot or add a line and the application would do the rest!
+You don't need to do much here; just put a dot or add a line, and the application will do the rest!
 
 
 
@@ -134,12 +134,12 @@ You don’t need to do much here, just put a dot or add a line and the applicati
 * Gradient vanishing problems
 * Exploding gradient problems
 * Training an RNN is a comparatively difficult task.
-* It cannot process very long sequences if using tanh or relu as an activation function.
+* It cannot process very long sequences using tanh or relu as an activation function.
 
 ## Long Short-Term Memory (LSTM)
-* Long Short-Term Memory (LSTM) networks are a modified version of recurrent neural networks(RNNs), which makes it easier to remember past data in memory.
+* Long Short-Term Memory (LSTM) networks are a modified version of recurrent neural networks(RNNs) that make it easier to remember past data in memory.
 * The vanishing gradient problem of RNN is resolved here.
-* Warning: The below image might look too complex at the moment. There’s nothing to fear, you’ll learn this in the next bootcamp.
+* Warning: The below image might look too complex at the moment. There's nothing to fear; you'll learn this in the next bootcamp.
 
 
 
@@ -155,9 +155,9 @@ You don’t need to do much here, just put a dot or add a line and the applicati
 
 
 ## Gated Recurrent Unit (GRU)
-* GRU (Gated Recurrent Unit) aims to solve the vanishing gradient problem which comes with a standard recurrent neural network.
+* GRU (Gated Recurrent Unit) aims to solve the vanishing gradient problem, which comes with a standard recurrent neural network.
 * GRU can also be considered as a variation on the LSTM because both are designed similarly and, in some cases, produce equally excellent results.
-* Another complex looking image alert! A gentle reminder: It gets easier when you understand it fully.
+* Another complex-looking image alert! A gentle reminder: It gets easier when you understand it fully.
 
 
 
@@ -179,9 +179,9 @@ You don’t need to do much here, just put a dot or add a line and the applicati
 ## Generative Adversarial Network (GAN)
 Go to https://thispersondoesnotexist.com/ 
 
-What do you see? A normal human being, right?
+What do you see? An average human being, right?
 
-If you didn't figure out from the website name yet, the person you saw does not actually exist! It's an image generated by a Deep Learning technique called GAN. Each time you refresh the website, you'll see a completely new person. How cool is that?
+If you didn't figure it out from the website name, the person you saw does not exist! It's an image generated by a Deep Learning technique called GAN. You'll see a completely new person when you refresh the website. How cool is that?
 
 
 
@@ -203,10 +203,10 @@ Let us look at some examples to understand what a GAN and its variants are capab
 
 
 
-* Given an image of the road, the network is able to fill in the details with objects such as cars etc.
-* The network is able to convert a black & white image into colour.
+* Given an image of the road, the network can fill the details with objects such as cars, etc.
+* The network can convert a black & white image into a colored image.
 * Given an aerial map, the network is able to find the roads in the image.
-* It is also able to fill in the details of a photo, given the edges.
+* It can also fill in the details of a photo, given the edges.
 
 The network learns to generate from a training distribution through a 2-player game. The two entities are Generator and Discriminator.
 
@@ -219,11 +219,11 @@ The network learns to generate from a training distribution through a 2-player g
 
 
 
-As you can identify from their names, a generator is used to generate real- looking images and the discriminator’s job is to identify which one is a fake. No need to get into their details at the moment. Just enjoy the glory of GANs!
+As you can identify from their names, a generator is used to generate real-looking images, and the discriminator's job is to determine which one is fake. There's no need to get into their details at the moment. Just enjoy the glory of GANs!
 
 ## DeepFakes
 
-Creating convincing image, audio and video hoaxes.
+DeepFakes create convincing image, audio, and video hoaxes.
 
 
 
@@ -244,15 +244,14 @@ Creating convincing image, audio and video hoaxes.
 
 
 
-Yes, the things in the above video were definitely not said by
-former US President Barack Obama.
+Yes, former US President Barack Obama did not say the things in the above video.
 
 Once upon a time, the researchers were keen on creating DeepFakes.
 
 Now, they are working on detecting them!
 
 ## Autoencoders
-* Autoencoder learns how to efficiently compress and encode data then learns how to reconstruct the data back.
+* Autoencoder learns how to compress and encode data efficiently, then learns how to reconstruct the data back.
 * It reduces data dimensions by learning how to ignore the noise in the data.
 
 
@@ -284,18 +283,18 @@ Implementing GANs in Tensorflow 2.0:  https://towardsdatascience.com/demystifyin
 Autoencoder with Tensorflow 2.0:  
 https://www.geeksforgeeks.org/ml-autoencoder-with-tensorflow-2-0/
 
-That’s just the tip of the iceberg. There are SO MANY more
+That's just the tip of the iceberg. There are SO MANY more
 neural networks out there!
 
-Just to name a few more:
+To name a few more:
 * Boltzmann Machine
 * Bidirectional LSTMs
 * Deep Belief Networks
 * Radial Basis Function Neural Networks
 
-Nope, you don’t need to dive into all of them at the moment. Go through the ones we’ve explained in the slides before, if you find some of them interesting, read about them and try to implement them.
+Nope, you don't need to dive into all of them now. Go through the ones we've explained in the slides before; if you find some of them interesting, read about them and try to implement them.
 
-If not, keep brushing up your skills on building MLP and CNN models. We’ll be covering advanced topics of Deep Learning like the ones mentioned in previous slides in the future Deep Learning Bootcamp.
+If not, keep brushing up your skills on building MLP and CNN models. We'll be covering advanced topics of Deep Learning like the ones mentioned in previous slides in the future Deep Learning Bootcamp.
 
 Stay tuned to find out when that happens :)
 
