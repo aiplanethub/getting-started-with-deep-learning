@@ -3,10 +3,10 @@
 
 A representation of a two-dimensional image as a finite set of digital values, called picture elements or pixels. f(x, y)
 
-Where x, y are spatial coordinates  
+Where x and y are spatial coordinates  
 $f(x, y) = i(x,y) * r(x,y)$  
 
-$f(x, y)$: Intensity at given point (x, y)  
+$f(x, y)$: Intensity at a given point (x, y)  
 $i(x, y)$: Illumination at (x, y)  
 $r(x, y)$: Reflectance/ Transmissivity at (x, y)
 
@@ -31,9 +31,9 @@ $M \times N$ representation of f
 
 ### Pixel & Digitization
 
-Pixels are the elements of a digital image that typically represent gray levels, colours, heights, opacities.
+Pixels are the elements of a digital image that typically represent gray levels, colors, heights, and opacities.
 
-Digitization implies that a digital image is an approximation of a real scene in the numerical matrices form
+Digitization implies that a digital image approximates a real scene in the numerical matrix form.
 
 
 
@@ -44,7 +44,7 @@ Digitization implies that a digital image is an approximation of a real scene in
 
 ### Digital Image
 
-Common digital image formats include
+Standard digital image formats include
 * 1 sample per point (B&W/Grayscale)
 * 3 samples per point ( Red, Green, and Blue)
 * 4 samples per point (Red, Green, Blue, and Alpha/opacity)
@@ -53,7 +53,7 @@ Common digital image formats include
 
 ### Digital Image Processing
 
-Processing digital images by means of a computer.
+We Process digital images using a computer.
 
 An image processing operation typically defines a new image g in terms of an existing image f.
 
@@ -68,15 +68,15 @@ Or the domain of f:
 ### Why Digital Image Processing?
 
 * Improvement of pictorial information for human interpretation
-* Processing of image data for storage, transmission and representation for autonomous machine perception
+* Processing of image data for storage, transmission, and representation for autonomous machine perception
 
 Where image processing ends, fields such as image analysis and computer vision start. The continuum from image processing to computer vision is broken down into: 
 
-* Low – Level:  
+* Low–Level:  
 Inputs and outputs are images. Ex: Noise Removal, Image Sharpening
-* Mid – Level:  
+* Mid–Level:  
 Outputs are the attributes extracted from input images. Ex: Object Recognition, Image Segmentation
-* High – Level:  
+* High–Level:  
 An ensemble of recognition of individual objects. Ex: Scene Understanding, Autonomous Navigation
 
 For more details about each step, refer to this article: https://medium.com/futframe-ai/fundamental-steps-of-digital-image-processing-d7518d6bb23c.
@@ -115,4 +115,4 @@ For more details about each step, refer to this article: https://medium.com/futf
 
 ### Notebook on Digital Image Processing
 
-The Notebook on Digital Image Processing can be found [here](https://dphi.tech/notebooks/847/gunnika/digital-image-processing).
+You can find the Notebook on Digital Image Processing [here](https://dphi.tech/notebooks/847/gunnika/digital-image-processing).
