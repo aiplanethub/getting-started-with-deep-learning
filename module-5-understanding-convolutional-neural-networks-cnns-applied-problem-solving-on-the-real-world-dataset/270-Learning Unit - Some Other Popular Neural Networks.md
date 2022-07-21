@@ -20,7 +20,7 @@ http://neuralnetworksanddeeplearning.com/chap4.html
 
 Until now, you've worked with MLP and CNN, which introduced you to Deep Learning.
 
-But what's more out there? Let's have a look!
+But what more is out there? Let's have a look!
 
 
 ## Recurrent Neural Network
