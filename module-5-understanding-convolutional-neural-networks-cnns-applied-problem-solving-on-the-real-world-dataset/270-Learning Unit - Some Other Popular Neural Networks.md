@@ -290,7 +290,7 @@ To name a few more:
 * Deep Belief Networks
 * Radial Basis Function Neural Networks
 
-Nope, you don't need to dive into all of them now. Go through the ones we've explained in the slides before; if you find some of them interesting, read about them and try to implement them.
+Nope, you don't need to dive into all of them now. Go through the ones we've explained above; if you find some of them interesting, read about them and try to implement them.
 
 If not, keep brushing up your skills on building MLP and CNN models. We'll be covering advanced topics of Deep Learning like the ones mentioned in previous slides in the future Deep Learning Bootcamp.
 
