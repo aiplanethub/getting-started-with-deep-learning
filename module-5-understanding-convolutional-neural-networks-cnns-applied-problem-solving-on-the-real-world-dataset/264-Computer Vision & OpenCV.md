@@ -71,16 +71,8 @@ Each pixel contains a different number of channels. If it is a grayscale image, 
 
 
 
-<p float="left" align='center'>
-<img src = "https://dphi-live.s3.amazonaws.com/media_uploads/image_fff853435a574068927daaf08569f15c.png" width="100" /> <img src = "https://dphi-live.s3.amazonaws.com/media_uploads/image_392006567fce44e0b69258d1f9dc400e.png" width="100" />
-</p>
-
-
-
-
-
-
-
+| ![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_fff853435a574068927daaf08569f15c.png) | ![image.png](https://dphi-live.s3.amazonaws.com/media_uploads/image_392006567fce44e0b69258d1f9dc400e.png) |
+| --- | --- |
 
 
 
