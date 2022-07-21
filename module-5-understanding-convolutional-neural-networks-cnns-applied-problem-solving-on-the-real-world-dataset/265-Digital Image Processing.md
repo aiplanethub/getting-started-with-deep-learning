@@ -111,3 +111,8 @@ For more details about each step, refer to this article: https://medium.com/futf
 * Medical Applications -> Tumor detection
 * Image generations
 * Image styling
+
+
+### Notebook on Digital Image Processing
+
+The Notebook on Digital Image Processing can be found [here](https://dphi.tech/notebooks/847/gunnika/digital-image-processing).
