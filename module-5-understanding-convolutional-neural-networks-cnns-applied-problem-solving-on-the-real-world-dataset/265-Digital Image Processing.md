@@ -116,3 +116,7 @@ For more details about each step, refer to this article: https://medium.com/futf
 ### Notebook on Digital Image Processing
 
 You can find the Notebook on Digital Image Processing [here](https://dphi.tech/notebooks/847/gunnika/digital-image-processing).
+
+### Slides Download Link
+
+You can download the slides for this module from [here](https://docs.google.com/presentation/d/1_AnXdbbkdrvgws-ZVorDSz0lj-VP9eTE/edit?usp=sharing&ouid=103295128566172156165&rtpof=true&sd=true).
