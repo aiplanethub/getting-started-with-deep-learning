@@ -8,7 +8,7 @@
 * Batch Normalization
 
 
-Until now, you’ve worked with Multi-Layer Perceptrons(MLP).
+Until now, you've worked with Multi-Layer Perceptrons(MLP).
 
 MLPs are great for MNIST - a simpler, more straightforward dataset - but lag behind CNNs when it comes to real-world applications in computer vision, specifically image classification.
 
@@ -16,7 +16,7 @@ The concepts that make CNN so great are not complex but are
 very intuitive, logical, and easy to understand.
 
 ## Spatial/Translation Invariance
-Spatial or Translation Invariance means that if an object occurs in any image it will be detected irrespective of its position in the image.
+Spatial or Translation Invariance means that if an object occurs in any image it will be detected irrespective of its position.
 
 A cat is still a cat regardless of whether it appears in the top half or the bottom half of the image.
 
@@ -37,7 +37,7 @@ A cat is still a cat regardless of whether it appears in the top half or the bot
 
 ## Disadvantages of MLP
 * Need to connect neurons in the hidden layer to ALL the neurons in the input layer
-* No spatial information: Since we reshape the image from 2D to 1D, it doesn’t really understand the spatial structure of the image, i.e., it is not spatially invariant. For example, if a picture of a cat appears in the top left of the image in one picture and the bottom right of another picture, the MLP will try to correct itself and assume that a cat will always appear in this section of the image.
+* No spatial information: Since we reshape the image from 2D to 1D, it doesn't understand the spatial structure of the image, i.e., it is not spatially invariant. For example, if a picture of a cat appears in the top left of the image in one picture and the bottom right of another picture, the MLP will try to correct itself and assume that a cat will always appear in this section of the image.
 
 
 
@@ -49,15 +49,15 @@ A cat is still a cat regardless of whether it appears in the top half or the bot
 
 
 
-* And many, many parameters to be handled. MLPs use one perceptron for each input (e.g. pixel in an image, multiplied by 3 in RGB case). The amount of weights rapidly becomes unmanageable for large images. For a 224 x 224 pixel image with 3 color channels there are around 150,000 weights that must be trained!
+* And many, many parameters to be handled. MLPs use one perceptron for each input (e.g. pixel in an image, multiplied by 3 in RGB case). The amount of weights rapidly becomes unmanageable for large images. For a 224 x 224 pixel image with three color channels, there are around 150,000 weights that must be trained!
 
 ## The Convolutional Neural Network
 
-Convolutional Neural Networks are designed to be spatially invariant, that is - they are not sensitive to the position of object in the picture. The cat can be anywhere in the image and it’ll still recognise it!
+Convolutional Neural Networks are designed to be spatially invariant; they are not sensitive to the object's position in the picture. The cat can be anywhere in the image, and it'll still recognize it!
 
-But what if the image doesn’t just consist of a cat? What if there are more features? Will flipping the image confuse the CNN? No, a CNN will still work fine!
+But what if the image doesn't just consist of a cat? What if there are more features? Will flipping the image confuse the CNN? No, a CNN will still work fine!
 
-CNN’s take advantage of the fact that nearby pixels are more strongly related than distant ones. So a pixels around sky will still be a sky and pixels near sunflower have more chances of being a sunflower.
+CNNs take advantage of the fact that nearby pixels are more strongly related than distant ones. So pixels around the sky will still be sky, and pixels near a sunflower have more chances of being a sunflower.
 
 
 
@@ -65,7 +65,7 @@ CNN’s take advantage of the fact that nearby pixels are more strongly related 
 
 
 
-To teach an algorithm how to recognise objects in images, we use a specific type of Artificial Neural Network: a Convolutional Neural Network (CNN). Their name stems from one of the most important operations in the network: convolution.
+To teach an algorithm to recognize objects in images, we use a specific type of Artificial Neural Network: a Convolutional Neural Network (CNN). Their name stems from one of the most important operations in the network: convolution.
 
 The word convolution refers to the filtering process that happens in this type of network. In literal terms, it is a mathematical operation that makes filtering possible.
 
@@ -75,11 +75,11 @@ Regular Neural Networks:
 
 * Transform an input by putting it through a series of hidden layers.
 * Every layer is made up of a set of neurons, where each layer is fully connected to all neurons in the layer before.
-* Finally, there is a last fully-connected layer — the output layer — that represent the predictions.
+* Finally, there is a last fully-connected layer — the output layer — that represents the predictions.
 
 In CNNs :
-* The layers are organized in 3 dimensions: width, height and depth.
-* The neurons in one layer do not connect to all the neurons in the next layer but only to a small region of it.
+* The layers are organized in 3 dimensions: width, height, and depth.
+* The neurons in one layer do not connect to all the neurons in the next layer but only to a small region.
 
 
 
@@ -97,9 +97,9 @@ In CNNs :
 CNN's have two components:
 
 1. The Hidden layers/Feature extraction part   
-In this part, the network will perform a series of operations during which the features are detected. If you had a picture of a zebra, this is the part where the network would recognise its stripes, two ears, and four legs.
+In this part, the network will perform a series of operations during which the features are detected. If you had a picture of a zebra, this is the part where the network would recognize its stripes, two ears, and four legs.
 2. The Classification part  
-This part assigns a probability of the object(eg. The zebra) being in that image.
+This part assigns a probability of the object(e.g., The zebra) being in that image.
 
 
 
@@ -114,7 +114,7 @@ This part assigns a probability of the object(eg. The zebra) being in that image
 
 ### A basic CNN architecture
 
-Below is the basic order of operations in a CNN. The Convolution and Pooling operations can occur multiple times in a CNN, the order will however remain the same. They’ll always be succeeded by Fully Connected and Softmax/Sigmoid layer.
+Below is the basic order of operations in a CNN. The Convolution and Pooling operations can occur multiple times in a CNN; the order will, however, remain the same. They'll always be succeeded by Fully Connected and Softmax/Sigmoid layers.
 
 
 
@@ -135,7 +135,7 @@ Below is the basic order of operations in a CNN. The Convolution and Pooling ope
 
 ### Basic Understanding of Filter, Stride & Convolution
 
-This is a brilliant explanation of how a kernel/filter makes convolution possible. For the people worried about how exactly does one get a particular size when applying a kernel on a matrix, this will solve your confusion.
+This brilliantly explains how a kernel/filter makes convolution possible. For the people worried about how exactly one gets a particular size when applying a kernel on a matrix, this will solve your confusion.
 
 
 
@@ -152,7 +152,7 @@ This is a brilliant explanation of how a kernel/filter makes convolution possibl
 
 
 
-### What is zero Padding and why is it even required?
+### What is zero Padding, and why is it even required?
 
 
 
@@ -223,28 +223,28 @@ This is a brilliant explanation of how a kernel/filter makes convolution possibl
 
 
 
-The earlier features of a ConvNet contain more generic features (e.g. edge detectors or color blob detectors), but later layers of the ConvNet becomes progressively more specific to the details of the classes contained in the original dataset.
+The earlier features of a ConvNet contain more generic features (e.g., edge detectors or color blob detectors), but later layers of the ConvNet become progressively more specific to the details of the classes contained in the original dataset.
 
-## How to use Deep Learning when you have limited Data
+## How to use Deep Learning when you have limited data
 
 ### The problem of Limited Data
 
-_“The analogy to deep learning is that the rocket engine is the deep learning models and the fuel is the huge amounts of data we can feed to these algorithms.”_ — Andrew Ng
+_"The analogy to deep learning is that the rocket engine is the deep learning models, and the fuel is the huge amounts of data we can feed to these algorithms."_ — Andrew Ng
 
-There has been a recent surge in popularity of Deep Learning, achieving state of the art performance in various tasks like Language Translation, playing Strategy Games and Self Driving Cars requiring millions of data points.
+There has been a recent surge in the popularity of Deep Learning, achieving state-of-the-art performance in various tasks like Language Translation, playing Strategy Games, and Self Driving Cars requiring millions of data points.
 
-One common barrier for using deep learning to solve problems is the amount of data needed to train a model. The requirement of large data arises because of the large number of parameters in the model that machines have to learn.
+One common barrier to using deep learning to solve problems is the amount of data needed to train a model. The requirement for large data arises because of the number of parameters in the model that machines have to learn.
 
 
-So what do you do when while working on a problem, you’re unable to find the required amount of data?
+So what do you do when you cannot find the required data while working on a problem?
 
 ## Transfer Learning to the Rescue!
 
-“If Deep Learning is the holy grail and data is the gatekeeper,
-transfer learning is the key.”
+"If Deep Learning is the holy grail and data is the gatekeeper,
+transfer learning is the key."
 
 ### Transfer Learning
-Transfer learning make use of the knowledge gained while solving one problem and applying it to a different but related problem.
+Transfer learning uses the knowledge gained while solving one problem and applying it to a different but related problem.
 
 For example, knowledge gained while learning to recognize cars can be used to some extent to recognize trucks.
 
@@ -282,19 +282,19 @@ For example, knowledge gained while learning to recognize cars can be used to so
 
 #### Pre-training
 
-When we train a network on a large dataset(for example: ImageNet), we train all the parameters of the neural network and therefore the model is learned. It may take hours on your GPU to train on such a large dataset. This model is known as a Pre-trained model.
+When we train a network on a large dataset(for example, ImageNet), we train all the neural network parameters, and therefore the model is learned. It may take hours on your GPU to train on such a large dataset. This model is known as a Pre-trained model.
 
 #### Fine Tuning
-We can give the new dataset to fine tune the pre-trained CNN. Consider that the new dataset is almost similar to the original dataset used for pre- training. Since the new dataset is similar, the same weights can be used for extracting the features from the new dataset.
-1. If the new dataset is very small, it’s better to train only the final layers of the network to avoid overfitting, keeping all other layers fixed. So remove the final layers of the pre-trained network. Add new layers . Retrain only the new layers.
-2. If the new dataset is very much large, retrain the whole network with initial weights from the pretrained model.
+We can give the new dataset to fine-tune the pre-trained CNN. Consider that the new dataset is almost similar to the original dataset used for pre-training. Since the new dataset is similar, the same weights can be used to extract the new dataset's features.
+1. If the new dataset is very small, it's better to train only the final layers of the network to avoid overfitting, keeping all other layers fixed. So, remove the pre-trained network's final layers and add new ones. Retrain only the new layers.
+2. If the new dataset is large, retrain the whole network with initial weights from the pre-trained model.
 
 Another major advantage of using transfer learning is how well the model generalizes.
 
-Larger models tend to overfit the data and don’t work as well when you test it out on unseen data. Since transfer learning allows the model to see different types of data, it learns underlying rules of the world better.
+Larger models tend to overfit the data and don't work well when testing it out on unseen data. Since transfer learning allows the model to see different types of data, it learns the underlying rules of the world better.
 
 
-You can have a look at this video if you’re interested to learn how Transfer Learning is performed. It’s a slightly advance topic so don’t worry if you don’t get it in the first go. Also,
+You can look at this video if you're interested in learning how Transfer Learning is performed. It's a slightly advanced topic, so don't worry if you don't get it in the first go. Also,
 the instructor is using Keras but the same code will work with tf.Keras as well.
 
 
@@ -313,17 +313,17 @@ the instructor is using Keras but the same code will work with tf.Keras as well.
 
 ## Data Augmentation
 
-To get more data, we just need to make minor alterations to our existing dataset. Minor changes such as flips or translations or rotations. Our neural network would think these are distinct images anyway.
+We need minor alterations to our existing dataset to get more data — minor changes such as flips, translations, or rotations. Our neural network would think these are distinct images anyway.
 
-A convolutional neural network that can robustly classify objects even if its placed in different orientations is said to have the property called invariance. More specifically, a CNN can be invariant to translation, viewpoint, size or illumination (Or a combination of the above).
+A convolutional neural network that can robustly classify objects even if its placed in different orientations is said to have the property called invariance. More specifically, a CNN can be invariant to translation, viewpoint, size, or illumination (Or a combination of the above).
 
-This essentially is the premise of data augmentation. In the real world scenario, we may have a dataset of images taken in a limited set of conditions. But, our target application may exist in a variety of conditions, such as different orientation, location, scale, brightness etc. We account for these situations by training our neural network with additional synthetically modified data.
+This essentially is the premise of data augmentation. In a real-world scenario, we may have a dataset of images taken in a limited set of conditions. But, our target application may exist in various conditions, such as orientation, location, scale, brightness, etc. We account for these situations by training our neural network with additional synthetically modified data.
 
 It is also one of the methods to prevent overfitting!
 
 _Your neural network is only as good as the data you feed it._
 
-By performing augmentation, can prevent your neural network from learning irrelevant patterns, essentially boosting overall performance.
+Performing augmentation can prevent your neural network from learning irrelevant patterns, essentially boosting overall performance.
 
 Your model for detecting a butterfly should be able to find a butterfly in the image even if it is flying sidewards, right?
 
@@ -351,9 +351,9 @@ exist.
 
 ### Where to perform Data Augmentation?
 
-Data Augmentation is usually performed on Train Set and often Validation Set as well. This is because we want to increase the size and variety of data our model learns from.
+Data Augmentation is usually performed on Train Set and often Validation Set. This is because we want to increase the size and variety of data our model learns from.
 
-However, Data Augmentation can also be performed on Test Set. It is not to make the test data bigger/more accurate, but just to make the input data from the test set resemble that of the input data from the training set, so we can feed it into the same net (eg same dimensions).
+However, Data Augmentation can also be performed on Test Set. It is not to make the test data bigger/more accurate but to make the input data from the test set resemble that of the input data from the training set so that we can feed it into the same net (e.g., same dimensions).
 
 For example, in image cropping, we'd need to crop the test images
 too, so they are of a similar size as the training images.
@@ -379,7 +379,7 @@ train_datagen = ImageDataGenerator(
 
 Look at the variety of augmentation operations available!
 
-Note: Apart from ImageDataGenerator, there exist multiple other options of performing Data Augmentation as well.
+Note: Apart from ImageDataGenerator, multiple other options exist for performing Data Augmentation.
 
 
 
