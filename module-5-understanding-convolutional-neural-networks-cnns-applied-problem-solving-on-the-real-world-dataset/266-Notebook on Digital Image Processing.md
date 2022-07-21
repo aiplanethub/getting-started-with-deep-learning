@@ -1,1 +1,0 @@
-<p>Notebook on Digital Image Processing:&nbsp;<a href="https://dphi.tech/notebooks/847/gunnika/digital-image-processing?" target="_blank">https://dphi.tech/notebooks/847/gunnika/digital-image-processing?</a>&nbsp;</p>
