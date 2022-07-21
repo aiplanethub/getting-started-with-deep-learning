@@ -275,12 +275,10 @@ Now, they are working on detecting them!
 
 ### Additional Material (Optional)
 
-A very basic introduction to implementing a Recurrent Neural Network:  
+* A very basic introduction to implementing a Recurrent Neural Network:  
 https://pythonprogramming.net/recurrent-neural-network-deep-learning-python-tensorflow-keras/
-
-Implementing GANs in Tensorflow 2.0:  https://towardsdatascience.com/demystifying-gans-in-tensorflow-2-0-9890834ab3d9
-
-Autoencoder with Tensorflow 2.0:  
+* Implementing GANs in Tensorflow 2.0:  https://towardsdatascience.com/demystifying-gans-in-tensorflow-2-0-9890834ab3d9
+* Autoencoder with Tensorflow 2.0:  
 https://www.geeksforgeeks.org/ml-autoencoder-with-tensorflow-2-0/
 
 That's just the tip of the iceberg. There are SO MANY more
