@@ -1,2 +1,0 @@
-<p><br />
-Notebook for Dive Deep into Vanilla Neural Networks:&nbsp;<a href="https://dphi.tech/notebooks/846/gunnika/fmnist-classifier?" target="_blank">https://dphi.tech/notebooks/846/gunnika/fmnist-classifier?</a></p>
