@@ -1,0 +1,1 @@
+<p>Note on Neural Networks for Classification (in this notebook, we will building a neural network&nbsp;to recognize a correct digit in a given image):&nbsp;<a href="https://dphi.tech/notebooks/845/gunnika/mnist-for-multi-class-classification?" target="_blank">https://dphi.tech/notebooks/845/gunnika/mnist-for-multi-class-classification?</a></p>
