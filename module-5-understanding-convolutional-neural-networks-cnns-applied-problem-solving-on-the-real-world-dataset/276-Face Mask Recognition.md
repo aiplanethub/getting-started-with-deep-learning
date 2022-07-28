@@ -1,1 +1,0 @@
-<p>Solve the problem here:&nbsp;<a href="https://dphi.tech/practice/challenge/34">https://dphi.tech/practice/challenge/34</a></p>
