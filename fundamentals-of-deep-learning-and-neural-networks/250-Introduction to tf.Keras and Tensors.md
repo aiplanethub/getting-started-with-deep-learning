@@ -1,5 +1,3 @@
-## Introduction to tf.Keras and Tensors
-
 ## Learning Objectives
 
 * TensorFlow, Keras & tf.keras
