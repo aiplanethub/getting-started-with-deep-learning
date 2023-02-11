@@ -11,8 +11,7 @@
 ### What is TensorFlow?
 
 * As you are aware by now, Tensorflow is a deep learning library/framework open-sourced by Google.
-* It has grown to become one of the most loved and widely adopted
-* ML platforms in the world.
+* It has grown to become one of the most loved and widely adopted ML platforms in the world.
 * The TensorFlow community includes:
     * Researchers
     * Developers
